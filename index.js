@@ -101,7 +101,7 @@ app.post('/reset2', async function (req, res){
     const data_from_frontend = req.body;
     if(data_from_frontend.password1===data_from_frontend.password2){
         let result11 = await client.db("day-44-task").collection("users").updateOne({random_string: data_from_frontend.random_string}, {$set: {"password" : data_from_frontend.password1}});
-        res.send({"msg": "Password succesfully updated. Redirecting to login page"}) 
+        res.send({"msg": "Password succesfully updated. Go to login-page & log back in with new password"}) 
     }else{
         res.send({"msg": "Both the passwords do not match"})
     }
