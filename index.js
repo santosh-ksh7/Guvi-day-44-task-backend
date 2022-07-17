@@ -64,7 +64,7 @@ app.post('/reset', async function (req, res){
             to: 'dummyuser12347890@gmail.com',
             subject: 'Sent Email using Node.js',
             text: `Copy this string : ${random_string}
-                    Open the link : https://password-reset-flow-1.herokuapp.com/reset1
+                    Open the link : https://clever-malabi-a145d2.netlify.app/reset1
             `        
           };
           
